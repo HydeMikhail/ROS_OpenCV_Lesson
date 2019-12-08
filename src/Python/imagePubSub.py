@@ -22,7 +22,6 @@ def imageCallback(imageData):
     Recieves the image sensor data and converts it to an
     OpenCV format using CV Bridge
     '''
-    print 'Received Image'
     #Convert ROS Image into OpenCV Image
     try:
         cvImage = bridge.imgmsg_to_cv2(imageData, "bgr8")
@@ -45,7 +44,7 @@ def main(args):
     Image Processing
     '''
     rospy.init_node('image_converter', anonymous=True)
-    imageSub = rospy.Subscriber("/usb_cam/image_raw", Image, imageCallback)
+    rospy.Subscriber("/usb_cam/image_raw", Image, imageCallback)
     try:
         rospy.spin()
     except KeyboardInterrupt:
