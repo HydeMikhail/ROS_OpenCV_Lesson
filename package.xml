@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>ROS_OpenCV</name>
+  <name>ros_opencv</name>
   <version>0.0.0</version>
-  <description>The ROS_OpenCV package</description>
+  <description>The ros_opencv package</description>
 
   <!-- One maintainer tag required, multiple allowed, one person per tag -->
   <!-- Example:  -->
